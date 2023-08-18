@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelly fitness </title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+<link rel="stylesheet" href="css/style.css">  
+<style>
+    /* css reset */
+    body{
+    font-family: 'Amaranth';font-size: 18px;
+     margin: 0px;
+     padding: 0px; 
+     background:url('images/fit.jpg');
+     /* background-position: center; */
+        background-size: cover;
+     color:black;
+   
+  
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid purple; */
+        /* background-color: black; */
+        position:absolute;
+        left:25px;
+        top: 18px;
+    }
+    .left img{
+        width:50px;
+        text-align: center ;
+        
+        
+      /*  filter: invert(100%); */   /* ye img k color ko change krta black h to white kr deta h or white h to black kr deta h*/
+    }
+    .left :hover{
+        text-decoration: underline;
+        color:purple; 
+        cursor: pointer;
+    }
+    .left div{
+        line-height: 10px;
+        margin:1px;
+        font-size: 14px;
+        font-style: bold;
+        text-align: center;
+
+        
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin: 15px auto;
+        padding: auto;
+        /* border: 2px solid purple; */
+        /* background-color: black; */
+   
+        
+    }
+    .right{
+        display: inline-block;
+        /* border: 2px solid purple; */
+        position:absolute;
+        right:25px;
+        top: 22px;
+        /* background-color: black; */
+    }
+    
+    .btn{
+        margin:0px 9px;
+        padding:4px 14px;
+       text-decoration: none;
+       color:black;
+       /* border: 3px solid black; */
+       border-radius: 1px;
+       font-size: 15px;
+       cursor:pointer;
+    }
+    .btn:hover{
+       text-decoration: underline;
+        color:purple;    
+    }
+   
+    .navbar{
+        display:inline-block; /* display:inline-block; */
+    }
+    .navbar li{
+        display:inline-block;
+    }
+    .navbar li a{
+        /* color:white; */
+        color:black;
+        text-decoration: none;
+        padding: 2px 10px;
+       
+    }
+    .navbar li a:hover{
+        text-decoration: underline;
+        color:purple;
+    }
+    .btn1{
+        margin:3px 3px;
+        padding:4px 3px;
+       text-decoration: none;
+       color:black;
+       /* border: 3px solid purple; */
+       border-radius: 1px;
+       font-size: 15px;
+       cursor:pointer;
+       position:fixed;
+       bottom:18px;
+       right:18px;
+
+    }
+    .btn1:hover{
+        text-decoration: underline;
+        color:purple;
+    }
+    .container{
+        /* border: 2px solid green; */
+        padding: 2px 2px;
+        margin: 80px 60px;
+        width: 280px;
+        border-radius: 2px;
+        font-size: 9px;   
+    }
+    .container h1{
+        display:block;
+        width: 90%;
+        margin:5px auto;
+       background-color: white;
+       padding:3px 5px;
+     
+       border: 2px solid purple;
+    }
+    .form-group input{
+        display:block;
+        width: 80%;
+        margin:5px auto;
+        text-align: center;
+          font-size: 15px;
+          border:2px solid black;
+          
+    }
+    .btn2{
+        display:block;
+        width:100px;
+        margin:8px auto;
+        padding:4px 14px;
+       text-decoration: none;
+       color:black;
+       /* border: 3px solid purple; */
+       border-radius: 3px;
+       font-size: 15px;
+       cursor:pointer; 
+       border:2px solid purple;
+    }
+    .btn2:hover{
+        text-decoration: underline;
+        color:purple;
+        background-color: yellowgreen;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+         <img src="images/logo.png" alt="">
+         <div>Shelly fitness</div>
+        </div>
+        <!-- mid box for navbar(navigation) -->
+        <div class="mid">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+        <!-- <button class="btn"> Read More</button> -->
+      <button><a href="info.html" class="btn"> More Info</a></button>
+    </div>
+    <div><button class="btn1"> Contact Us Now </button></div>
+    </header>
+    <div class="container">
+       <h1>Join the best Gym of Hisar now </h1>
+       <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Contact No.">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Phone No.">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Email">
+        </div>
+        <button href="#" class="btn2">Submit</button>
+       </form>
+    </div>
+</body>
+</html>
+
